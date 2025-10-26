@@ -43,7 +43,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {projects.map((project) => (
             <Card key={project.id} className="bg-background border-0 shadow-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl">
               <div className="p-6">
@@ -60,7 +60,7 @@ const Projects = () => {
                     </Badge>
                   ))}
                 </div>
-                <div className="flex gap-3">
+                <div className="flex flex-col sm:flex-row gap-3">
                   <Button 
                     variant="outline" 
                     className="border-blue-500 text-blue-500 flex-1"

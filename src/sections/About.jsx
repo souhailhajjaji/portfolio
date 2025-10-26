@@ -71,12 +71,12 @@ const About = () => {
           </Card>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
           <div>
             <h3 className="text-2xl font-bold mb-6 flex items-center">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-cyan-500">Skills</span>
             </h3>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 sm:gap-3">
               {skills.map((skill, index) => (
                 <Badge 
                   key={index} 
