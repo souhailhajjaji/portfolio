@@ -55,7 +55,7 @@ const Navbar = () => {
           </NavigationMenuList>
         </NavigationMenu>
 
-        <div className="flex flex-1 items-center justify-end space-x-4">
+        <div className="flex flex-1 items-center justify-end space-x-3">
           <a 
             href="#"
             onClick={handleDownload}
@@ -115,18 +115,18 @@ const Navbar = () => {
                   </svg>
                   Download CV
                 </a>
-                <div className="pt-4 flex space-x-4">
-                  <a href="https://www.linkedin.com/in/souhail-hajjaji-46846137a/" target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center p-2 rounded-md border border-input hover:bg-accent hover:text-accent-foreground">
+                <div className="pt-4 flex justify-center space-x-6">
+                  <a href="https://www.linkedin.com/in/souhail-hajjaji-46846137a/" target="_blank" rel="noopener noreferrer" className="p-3 rounded-md border border-input hover:bg-accent hover:text-accent-foreground">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
                       <rect width="4" height="12" x="2" y="9"/>
                       <circle cx="4" cy="4" r="2"/>
                     </svg>
                   </a>
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center p-2 rounded-md border border-input hover:bg-accent hover:text-accent-foreground">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="p-3 rounded-md border border-input hover:bg-accent hover:text-accent-foreground">
                     <Github className="h-4 w-4" />
                   </a>
-                  <a href="mailto:souhail.hajjaji.2004@gmail.com" className="flex-1 flex items-center justify-center p-2 rounded-md border border-input hover:bg-accent hover:text-accent-foreground">
+                  <a href="mailto:souhail.hajjaji.2004@gmail.com" className="p-3 rounded-md border border-input hover:bg-accent hover:text-accent-foreground">
                     <Mail className="h-4 w-4" />
                   </a>
                 </div>
