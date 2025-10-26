@@ -213,7 +213,16 @@ const Contact = () => {
                 <div className="pt-4">
                   <Button 
                     className="w-full bg-blue-600 hover:bg-blue-700"
-                    onClick={() => window.open("#", '_blank')}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      // Create a temporary link and trigger download
+                      const link = document.createElement('a');
+                      link.href = '/souhail.hajjaji.pdf';
+                      link.download = 'souhail.hajjaji.pdf';
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                    }}
                   >
                     <div className="flex items-center justify-center gap-2">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
