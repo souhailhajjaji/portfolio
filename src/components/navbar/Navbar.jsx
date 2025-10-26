@@ -22,6 +22,17 @@ const Navbar = () => {
     { title: 'Contact', href: '#contact' },
   ];
 
+  const handleDownload = (e) => {
+    e.preventDefault();
+    // Create a temporary link and trigger download
+    const link = document.createElement('a');
+    link.href = '/souhail.hajjaji.pdf';
+    link.download = 'souhail.hajjaji.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full bg-background/90 backdrop-blur border-b">
       <div className="container flex h-16 items-center">
@@ -46,9 +57,8 @@ const Navbar = () => {
 
         <div className="flex flex-1 items-center justify-end space-x-4">
           <a 
-            href="#" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+            href="#"
+            onClick={handleDownload}
             className="hidden md:flex items-center gap-2 px-3 py-2 text-sm border border-input hover:bg-accent hover:text-accent-foreground rounded-md font-medium transition-colors"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -94,9 +104,8 @@ const Navbar = () => {
                   </a>
                 ))}
                 <a 
-                  href="#" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                  href="#"
+                  onClick={handleDownload}
                   className="flex items-center justify-center gap-2 px-4 py-2 border border-input hover:bg-accent hover:text-accent-foreground rounded-md text-sm font-medium transition-colors"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
