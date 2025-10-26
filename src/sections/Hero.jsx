@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import profilePic from '@/assets/profile.jpg';
 
 const Hero = () => {
   return (
@@ -42,7 +43,7 @@ const Hero = () => {
           <div className="flex-1 flex justify-center">
             <div className="relative">
               <img 
-                src="/src/assets/profile.jpg" 
+                src={profilePic} 
                 alt="Souhail Hajjaji" 
                 className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-blue-500/30 shadow-xl"
               />
